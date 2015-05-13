@@ -168,6 +168,11 @@ define(${1:optional_name, }[${2:'jquery'}], ${3:callback});
 endsnippet
 
 snippet req "require an AMD module"
+var `!p snip.rv = t[1]` = require('${1:dependencies}');
+
+endsnippet
+
+snippet reqcb "require an AMD module with callback"
 require([${1:'dependencies'}], ${2:callback});
 endsnippet
 
